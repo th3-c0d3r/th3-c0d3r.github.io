@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background with subtle grid -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f0f0f0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="#1a1a2e"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  
+  <!-- Supply Chain Path -->
+  <path d="M 100 300 C 200 200, 300 400, 400 300 C 500 200, 600 400, 700 300" stroke="#f0d04e" stroke-width="4" fill="none" stroke-dasharray="10,5" stroke-linecap="round"/>
+  
+  <!-- Blockchain Nodes -->
+  <!-- Node 1 -->
+  <g transform="translate(100,300)">
+    <rect x="-40" y="-40" width="80" height="80" rx="10" fill="#16213e" stroke="#f0d04e" stroke-width="2"/>
+    <rect x="-30" y="-30" width="60" height="60" rx="5" fill="#1e1e24" stroke="#f0d04e" stroke-width="1"/>
+    <text x="0" y="5" font-family="Roboto Mono, monospace" font-size="12" fill="#f0d04e" text-anchor="middle">BLOCK 1</text>
+    <text x="0" y="25" font-family="Roboto Mono, monospace" font-size="8" fill="#f0d04e" text-anchor="middle">FARM</text>
+  </g>
+  
+  <!-- Node 2 -->
+  <g transform="translate(250,300)">
+    <rect x="-40" y="-40" width="80" height="80" rx="10" fill="#16213e" stroke="#f0d04e" stroke-width="2"/>
+    <rect x="-30" y="-30" width="60" height="60" rx="5" fill="#1e1e24" stroke="#f0d04e" stroke-width="1"/>
+    <text x="0" y="5" font-family="Roboto Mono, monospace" font-size="12" fill="#f0d04e" text-anchor="middle">BLOCK 2</text>
+    <text x="0" y="25" font-family="Roboto Mono, monospace" font-size="8" fill="#f0d04e" text-anchor="middle">PROCESSING</text>
+  </g>
+  
+  <!-- Node 3 -->
+  <g transform="translate(400,300)">
+    <rect x="-40" y="-40" width="80" height="80" rx="10" fill="#16213e" stroke="#f0d04e" stroke-width="2"/>
+    <rect x="-30" y="-30" width="60" height="60" rx="5" fill="#1e1e24" stroke="#f0d04e" stroke-width="1"/>
+    <text x="0" y="5" font-family="Roboto Mono, monospace" font-size="12" fill="#f0d04e" text-anchor="middle">BLOCK 3</text>
+    <text x="0" y="25" font-family="Roboto Mono, monospace" font-size="8" fill="#f0d04e" text-anchor="middle">DISTRIBUTION</text>
+  </g>
+  
+  <!-- Node 4 -->
+  <g transform="translate(550,300)">
+    <rect x="-40" y="-40" width="80" height="80" rx="10" fill="#16213e" stroke="#f0d04e" stroke-width="2"/>
+    <rect x="-30" y="-30" width="60" height="60" rx="5" fill="#1e1e24" stroke="#f0d04e" stroke-width="1"/>
+    <text x="0" y="5" font-family="Roboto Mono, monospace" font-size="12" fill="#f0d04e" text-anchor="middle">BLOCK 4</text>
+    <text x="0" y="25" font-family="Roboto Mono, monospace" font-size="8" fill="#f0d04e" text-anchor="middle">RETAIL</text>
+  </g>
+  
+  <!-- Node 5 -->
+  <g transform="translate(700,300)">
+    <rect x="-40" y="-40" width="80" height="80" rx="10" fill="#16213e" stroke="#f0d04e" stroke-width="2"/>
+    <rect x="-30" y="-30" width="60" height="60" rx="5" fill="#1e1e24" stroke="#f0d04e" stroke-width="1"/>
+    <text x="0" y="5" font-family="Roboto Mono, monospace" font-size="12" fill="#f0d04e" text-anchor="middle">BLOCK 5</text>
+    <text x="0" y="25" font-family="Roboto Mono, monospace" font-size="8" fill="#f0d04e" text-anchor="middle">CONSUMER</text>
+  </g>
+  
+  <!-- Smart Contract -->
+  <g transform="translate(400,150)">
+    <rect x="-70" y="-40" width="140" height="80" rx="10" fill="#1e1e24" stroke="#f0d04e" stroke-width="2"/>
+    <text x="0" y="-15" font-family="Roboto, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">SMART CONTRACT</text>
+    <text x="0" y="10" font-family="Roboto Mono, monospace" font-size="10" fill="#f0d04e" text-anchor="middle">function trackProduct() {</text>
+    <text x="0" y="25" font-family="Roboto Mono, monospace" font-size="10" fill="#f0d04e" text-anchor="middle">  verifyIntegrity();</text>
+    <text x="0" y="40" font-family="Roboto Mono, monospace" font-size="10" fill="#f0d04e" text-anchor="middle">}</text>
+  </g>
+  
+  <!-- Data Integrity Visualization -->
+  <g transform="translate(400,450)">
+    <rect x="-120" y="-50" width="240" height="100" rx="10" fill="#1e1e24" stroke="#f0d04e" stroke-width="2"/>
+    <text x="0" y="-25" font-family="Roboto, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">DATA INTEGRITY</text>
+    
+    <!-- Hash Visualization -->
+    <g transform="translate(-90,-5)">
+      <rect x="0" y="0" width="60" height="20" fill="#16213e" stroke="#f0d04e" stroke-width="1"/>
+      <text x="30" y="15" font-family="Roboto Mono, monospace" font-size="10" fill="#f0d04e" text-anchor="middle">HASH A</text>
+    </g>
+    
+    <g transform="translate(30,-5)">
+      <rect x="0" y="0" width="60" height="20" fill="#16213e" stroke="#f0d04e" stroke-width="1"/>
+      <text x="30" y="15" font-family="Roboto Mono, monospace" font-size="10" fill="#f0d04e" text-anchor="middle">HASH B</text>
+    </g>
+    
+    <!-- Arrows -->
+    <line x1="-60" y1="30" x2="-30" y2="40" stroke="#f0d04e" stroke-width="2"/>
+    <line x1="60" y1="30" x2="30" y2="40" stroke="#f0d04e" stroke-width="2"/>
+    
+    <!-- Merkle Root -->
+    <g transform="translate(-30,40)">
+      <rect x="0" y="0" width="60" height="20" fill="#16213e" stroke="#f0d04e" stroke-width="1"/>
+      <text x="30" y="15" font-family="Roboto Mono, monospace" font-size="10" fill="#f0d04e" text-anchor="middle">ROOT</text>
+    </g>
+  </g>
+  
+  <!-- Hyperledger Fabric Logo Stylized -->
+  <g transform="translate(700,100)">
+    <rect x="-60" y="-30" width="120" height="60" rx="10" fill="#1e1e24" stroke="#f0d04e" stroke-width="2"/>
+    <text x="0" y="-5" font-family="Roboto, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">HYPERLEDGER</text>
+    <text x="0" y="15" font-family="Roboto, sans-serif" font-size="14" fill="#f0d04e" text-anchor="middle">FABRIC</text>
+  </g>
+  
+  <!-- Connection Lines between Nodes -->
+  <line x1="140" y1="300" x2="210" y2="300" stroke="#f0d04e" stroke-width="2"/>
+  <line x1="290" y1="300" x2="360" y2="300" stroke="#f0d04e" stroke-width="2"/>
+  <line x1="440" y1="300" x2="510" y2="300" stroke="#f0d04e" stroke-width="2"/>
+  <line x1="590" y1="300" x2="660" y2="300" stroke="#f0d04e" stroke-width="2"/>
+  
+  <!-- Smart Contract Connection -->
+  <line x1="400" y1="190" x2="400" y2="260" stroke="#f0d04e" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Roboto, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">BLOCKCHAIN SUPPLY CHAIN</text>
+  <text x="400" y="80" font-family="Roboto, sans-serif" font-size="16" fill="#f0d04e" text-anchor="middle">TRANSPARENCY & TRACEABILITY</text>
+</svg>
