@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Developer Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1 id="logo-text">Karthikeyan M</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-switch" class="theme-switch">
+                    <label for="theme-switch" class="theme-label">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <span class="theme-ball"></span>
+                    </label>
+                    <div class="theme-notification">
+                        <p>Dark mode enabled</p>
+                        <!-- <button class="close-notification">&times;</button> -->
+                    </div>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- <h1>Karthikeyan M</h1> -->
+                <div class="hero-subtitle">
+                    <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                </div>
+                <!-- <p>Backend Developer specializing in scalable Java solutions</p> -->
+                <!-- <div class="hero-tags">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Microservices</span>
+                    <span>API Design</span>
+                </div> -->
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/profile-placeholder.jpg" alt="Profile Picture">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm a passionate backend developer with expertise in building scalable and efficient server-side applications. I specialize in JAVA Spring Boot Services.</p>
+                    <p>With 4.5+ years of experience in the industry, I've worked on various projects ranging from Supply Chain to Fintech. I'm committed to writing clean, maintainable code and implementing best practices in software development.</p>
+                    <p>When I'm not coding, I enjoy driving my car or playing video games.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul class="skill-list">
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <ul class="skill-list">
+                        <li>Spring Boot</li>
+                        <li>Vert.x</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <ul class="skill-list">
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>Redis</li>
+                        <li>ElasticSearch</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/kafka.png" alt="Kafka Stream Processing">
+                    </div>
+                    <div class="project-info">
+                        <h3>Real-time Analytics Pipeline</h3>
+                        <p>Developed a real-time data processing system using Apache Kafka Streams for processing millions of events per second. Implemented stream processing for real-time analytics and anomaly detection.</p>
+                        <div class="project-tech">
+                            <span>Kafka</span>
+                            <span>Java</span>
+                            <span>Elasticsearch</span>
+                            <span>Kibana</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn small-btn">Live Demo</a>
+                            <a href="#" target="_blank" class="btn small-btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/ai-agent.png" alt="AI Agent Development">
+                    </div>
+                    <div class="project-info">
+                        <h3>AI-Powered Task Automation Agent</h3>
+                        <p>Developed an intelligent agent using LangChain and OpenAI API that can automate complex workflows. The agent can understand natural language instructions, break them into tasks, and execute them using various tools and APIs.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>LangChain</span>
+                            <span>OpenAI API</span>
+                            <span>FastAPI</span>
+                            <span>Redis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn small-btn">Live Demo</a>
+                            <a href="#" target="_blank" class="btn small-btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/blockchain.png" alt="Blockchain Supply Chain">
+                    </div>
+                    <div class="project-info">
+                        <h3>Supply Chain Tracking with Blockchain</h3>
+                        <p>Developed a blockchain-based solution for supply chain transparency using Hyperledger Fabric. Implemented smart contracts for tracking product movement and ensuring data integrity.</p>
+                        <div class="project-tech">
+                            <span>Blockchain</span>
+                            <span>Hyperledger</span>
+                            <span>Node.js</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn small-btn">Live Demo</a>
+                            <a href="#" target="_blank" class="btn small-btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>SDE 2</h3>
+                        <h4>Ninjacart</h4>
+                        <p class="timeline-date">Apr 2023 - Present</p>
+                        <button class="btn small-btn details-btn" data-modal="modal-exp1">View Details</button>
+                    </div>
+                </div>
+                
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>SDE 1</h3>
+                        <h4>Ninjacart</h4>
+                        <p class="timeline-date">Apr 2022 - Mar 2023</p>
+                        <button class="btn small-btn details-btn" data-modal="modal-exp2">View Details</button>
+                    </div>
+                </div>
+                
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Junior SDE</h3>
+                        <h4>Ninjacart</h4>
+                        <p class="timeline-date">Aug 2020 - Mar 2022</p>
+                        <button class="btn small-btn details-btn" data-modal="modal-exp3">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>karthikeyan.tech@icloud.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Bangalore, KA, IN.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/th3-c0d3r" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/karthikeyan-m-tech" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Karthikeyan M. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Experience Modals -->
+    <div id="modal-exp1" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>SDE 2</h3>
+            <h4>Ninjacart</h4>
+            <p class="timeline-date">Apr 2023 - Present</p>
+            <div class="modal-details">
+                <h4>Fintech - Lending</h4>
+                <ul>
+                    <li>Redesigned LOS borrower onboarding system with backend-controlled UI flow and role-based remote assistance, reducing TAT from 20 days to just 2 hours, increasing onboarding efficiency by 90%.</li>
+                    <li>Built platform microservices for digital asset management to handle documents like PAN, AADHAAR of borrowers digitally.</li>
+                    <li>Created a scaled down version of rule engine with dynamic SQL query generation for lending customization use cases. </li>
+                </ul>
+                <h4>Fintech - Risk</h4>
+                <ul>
+                    <li>Contributed to the development of a microservice to enable config based rule execution for use cases, such as fraud detection.</li>
+                </ul>
+                <h4>Key Technologies:</h4>
+                <ul>
+                    <li>Matrix.org</li>
+                    <li>Spring Boot</li>
+                    <li>MySQL, MongoDB</li>
+                    <li>Hex Arch</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-exp2" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>SDE 1</h3>
+            <h4>Ninjacart</h4>
+            <p class="timeline-date">Apr 2022 - Mar 2023</p>
+            <div class="modal-details">
+                <h4>Fintech - Neobanking</h4>
+                <ul>
+                    <li>Developed core fintech platform services for handling user payments, accounts and transactions, integrating Zwitch and Decentro APIs for seamless wallet-to-bank, bank-to-wallet transactions contributing to the developement of QR based UPI money collection product (similar to Paytm, PhonePe).</li>
+                    <li>Built an assurance product for traders in traditional mandi based supply chain, which provides assurance in the recovery for money for traded goods.</li>
+                    <li>Automated transaction reconciliation using Apache Airflow, reducing manual efforts and ensuring error-free daily transaction reports.</li>
+                </ul>
+                <h4>Fintech - Lending</h4>
+                <ul>
+                    <li>Contributed to the early stage development of ONCE based LMS, LOS Spring Boot microservices.</li>
+                </ul>
+                <h4>Key Technologies:</h4>
+                <ul>
+                    <li>JAVA</li>
+                    <li>Spring Boot</li>
+                    <li>MySQL</li>
+                    <li>Apache Airflow, Python</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-exp3" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Junior SDE</h3>
+            <h4>Ninjacart</h4>
+            <p class="timeline-date">Aug 2020 - Mar 2022</p>
+            <div class="modal-details">
+                <h4>Supply-chain - First-Mile Logistics</h4>
+                <ul>
+                    <li>Contributed to the development of Vert.x microservice for Inter State (India) trip tracking for IOT device installed Trucks. Used kafka for data ingress for tracking.</li>
+                    <li>Implemented Freight Tiger's API for real-time trip tracking using SIM triangulation, enhancing logistics visibility.</li>
+                </ul>
+                <h4>Supply-chain - Last-Mile Logistics</h4>
+                <ul>
+                    <li>Designed and deployed RESTful APIs to automate trip creation and vehicle assignment, improving last-mile delivery efficiency.</li>
+                    <li>Contributed in the development of Delivery trip cost calculation module.</li>
+                </ul>
+                <h4>Key Technologies:</h4>
+                <ul>
+                    <li>JAVA</li>
+                    <li>Spring Boot</li>
+                    <li>Vert.x</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Before closing body tag -->
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+    </html>
